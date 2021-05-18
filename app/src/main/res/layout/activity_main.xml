@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3CD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/v_lg_g"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Vælg et æg" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/_00_00"
+        android:textSize="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/timerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumBoiledButton" />
+
+    <Button
+        android:id="@+id/timerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:onClick="onTimerBtnClicked"
+        android:text="@string/start"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/roundbutton" />
+
+    <ImageButton
+        android:id="@+id/softBoiledButton"
+        android:layout_width="111dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/softboiledegg"
+        android:onClick="onButtonEggSelectedClicked"
+        android:scaleType="fitCenter"
+        android:tint="#1AFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_soft" />
+
+    <ImageButton
+        android:id="@+id/mediumBoiledButton"
+        android:layout_width="111dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/mediumboiledegg"
+        android:onClick="onButtonEggSelectedClicked"
+        android:scaleType="fitCenter"
+        android:tint="#1AFFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/hardBoiledButton"
+        app:layout_constraintStart_toEndOf="@+id/softBoiledButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_medium" />
+
+    <ImageButton
+        android:id="@+id/hardBoiledButton"
+        android:layout_width="111dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/hardboiledegg"
+        android:onClick="onButtonEggSelectedClicked"
+        android:scaleType="fitCenter"
+        android:tint="#1AFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_hard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

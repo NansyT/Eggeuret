@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Eggeuret</string>
+    <string name="v_lg_g">Vælg æg</string>
+    <string name="button">Blødkogte</string>
+    <string name="button3">Hårdkogte</string>
+    <string name="button2">Smilende</string>
+    <string name="_00_00">00:00</string>
+    <string name="start">Start</string>
+    <string name="hardboiledegg">HardboiledEgg</string>
+    <string name="softboiledegg">SoftboiledEgg</string>
+    <string name="mediumboiledegg">MediumboiledEgg</string>
+</resources>
